@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Web VR Test</title>
+    <link rel="stylesheet" type="text/css" href="site.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  </head>
+
+  <body>
+    <div id="ui">
+      <div id="vr-button"></div>
+      <a id="magic-window" href="#">Try it without a headset</a>
+    </div>
+  </body>
+
+  <script>
+    WebVRConfig = { BUFFER_SCALE: 0.5 }
+  </script>
+
+  <script src="https://cdn.rawgit.com/mrdoob/three.js/r86/examples/js/vr/WebVR.js"></script>
+	<script src="lib/three.min.js"></script>
+  <script src="lib/VREffect.js"></script>
+  <script src="lib/webvr-polyfill.min.js"></script>
+  <script src="lib/VRControls.js"></script>
+  <script src="lib/webvr-ui.min.js"></script>
+  <script src="lib/VRController.js"></script>
+  <script src="lib/stats.min.js"></script>
+  <script src="index.js"></script>
+
+</html>
